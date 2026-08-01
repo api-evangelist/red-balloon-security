@@ -1,0 +1,29 @@
+# Red Balloon Security
+
+> Red Balloon Security is an embedded-device and firmware security company protecting critical infrastructure (automotive, aerospace, defense, industrial control, and electrical grid systems). Its public developer surface is OFRAK (Open Firmware Reverse Analysis Konsole), an open-source binary analysis and modification framework distributed as official Python packages. Red Balloon publishes no hosted public REST API; this profile catalogs the OFRAK developer surface.
+
+## Products
+- [Firmware Hardening](https://redballoonsecurity.com/): Secures firmware binaries against exploits without source access.
+- [Runtime Defense](https://redballoonsecurity.com/): Firmware-level continuous attestation with real-time integrity alerts.
+- [OFRAK](https://ofrak.com/): Open-source unpack/analyze/modify/repack framework for firmware and binaries.
+- [Bitwise](https://bitwise.co/): FPGA bitstream and binary analysis platform.
+
+## Docs
+- [OFRAK Documentation](https://ofrak.com/docs/): Reference docs for the OFRAK framework, Python API, and CLI.
+- [Getting Started](https://ofrak.com/docs/getting-started.html): Unpack your first file in under 5 minutes.
+- [OFRAK License](https://ofrak.com/license/): Community and commercial license terms.
+
+## Packages
+- [ofrak on PyPI](https://pypi.org/project/ofrak/): pip install ofrak — core platform, CLI, and web GUI.
+- [ofrak-type on PyPI](https://pypi.org/project/ofrak-type/): Shared type definitions.
+- [ofrak-io on PyPI](https://pypi.org/project/ofrak-io/): Binary I/O primitives.
+- [ofrak-patch-maker on PyPI](https://pypi.org/project/ofrak-patch-maker/): Toolchain-driven binary patching.
+
+## Source
+- [OFRAK on GitHub](https://github.com/redballoonsecurity/ofrak): Source, releases, and issue tracker.
+- [Red Balloon Security on GitHub](https://github.com/redballoonsecurity): Organization repositories.
+- [Releases / Changelog](https://github.com/redballoonsecurity/ofrak/releases): Dated release history (semver).
+
+## Community
+- [OFRAK Slack](https://join.slack.com/t/ofrak/shared_invite/zt-1jku9h6r5-mY7CeeZ4AT8JVmu5YWw2Qg): Community support.
+- [Blog](https://redballoonsecurity.com/blog): Company blog.

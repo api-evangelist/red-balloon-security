@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/redballoonsecurity/ofrak/releases
+subject: OFRAK (open-source framework by Red Balloon Security)
+scheme: semver
+per_package: true
+notes: >-
+  OFRAK versions each package independently (ofrak-vX, ofrak-type-vX,
+  ofrak-patch-maker-vX). GitHub Releases is the dated source of truth; the
+  recent window is captured below. Current core package version on PyPI is
+  3.3.0.
+current:
+  ofrak: 3.3.0
+entries:
+  - package: ofrak
+    version: 3.2.0
+    breaking: false
+    highlights:
+      - Added JFFS2 packer/unpacker
+      - Added pattern search capability
+      - Added EXT filesystem unpackers
+  - package: ofrak-patch-maker
+    version: 4.0.2
+    breaking: false
+    highlights:
+      - Removed reading toolchain.conf from /etc/toolchain.conf
+  - package: ofrak-patch-maker
+    version: 4.0.1
+    breaking: false
+    highlights:
+      - Added interface to iterate over Toolchain implementations
+  - package: ofrak
+    version: 3.1.0
+    breaking: false
+    highlights:
+      - Introduced ElfLoadAlignmentModifier
+      - Added GUI settings pane for theming
+  - package: ofrak-type
+    version: 2.2.0
+    breaking: false
+    highlights:
+      - Added CORTEX_A72 processor type
+      - Added LinkableSymbolType enum
+  - package: ofrak-patch-maker
+    version: 4.0.0
+    breaking: true
+    highlights:
+      - Changed linker flags and GOT handling
+      - Added relocation symbol parsing
+  - package: ofrak
+    version: 3.0.0
+    breaking: true
+    highlights:
+      - Major overhaul with dynamic script generation
+      - Added CLI import options

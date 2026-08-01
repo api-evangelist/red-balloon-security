@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/ofrak/ + https://github.com/redballoonsecurity/ofrak
+notes: >-
+  Red Balloon Security publishes no hosted/public REST API. Its first-party
+  developer surface is OFRAK (Open Firmware Reverse Analysis Konsole), an
+  open-source binary analysis and modification framework distributed as a
+  family of official Python packages on PyPI, authored by Red Balloon Security
+  (author email ofrak@redballoonsecurity.com; PyPI maintainers rbs, rbs-jacob,
+  rbswyatt). All packages below are first-party.
+packages:
+  - language: python
+    registry: pypi
+    name: ofrak
+    url: https://pypi.org/project/ofrak/
+    install: pip install ofrak
+    version: 3.3.0
+    official: true
+    description: OFRAK binary analysis and modification platform (unpack, analyze, modify, repack firmware/binaries) with CLI, Python API, and web GUI.
+  - language: python
+    registry: pypi
+    name: ofrak-type
+    url: https://pypi.org/project/ofrak-type/
+    install: pip install ofrak-type
+    official: true
+    description: Shared type definitions (architectures, bit widths, endianness, processor types) used across OFRAK.
+  - language: python
+    registry: pypi
+    name: ofrak-io
+    url: https://pypi.org/project/ofrak-io/
+    install: pip install ofrak-io
+    official: true
+    description: Low-level binary I/O primitives used by OFRAK.
+  - language: python
+    registry: pypi
+    name: ofrak-patch-maker
+    url: https://pypi.org/project/ofrak-patch-maker/
+    install: pip install ofrak-patch-maker
+    version: 4.0.2
+    official: true
+    description: Toolchain-driven code patching for OFRAK (compile, link, and inject patches into binaries).
+  - language: python
+    registry: pypi
+    name: ofrak-tutorial
+    url: https://pypi.org/project/ofrak-tutorial/
+    install: pip install ofrak-tutorial
+    official: true
+    description: Notebook-based OFRAK tutorial package.
+  - language: python
+    registry: pypi
+    name: pytest-ofrak
+    url: https://pypi.org/project/pytest-ofrak/
+    install: pip install pytest-ofrak
+    official: true
+    description: Pytest plugin providing OFRAK test fixtures.

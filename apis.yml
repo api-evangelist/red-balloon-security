@@ -1,8 +1,31 @@
 aid: red-balloon-security
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/red-balloon-security.png
 name: Red Balloon Security
-description: 'Red Balloon Security is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  Red Balloon Security is an embedded-device and firmware security company that
+  protects critical infrastructure across automotive, aerospace, defense,
+  industrial control, and electrical-grid systems. Its offerings include Firmware
+  Hardening (securing firmware binaries against exploitation without source
+  access), Runtime Defense (firmware-level continuous attestation with real-time
+  integrity alerts), embedded device security assessments, and the Bitwise FPGA
+  bitstream analysis platform. Red Balloon's public developer surface is OFRAK
+  (Open Firmware Reverse Analysis Konsole), an open-source binary analysis and
+  modification framework that unpacks, analyzes, modifies, and repacks firmware
+  and executables, distributed as official Python packages on PyPI with a CLI and
+  web GUI. Red Balloon publishes no hosted public REST API; this profile catalogs
+  the OFRAK developer surface (packages, CLI, changelog) and company link
+  properties.
 url: https://raw.githubusercontent.com/api-evangelist/red-balloon-security/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Security
+- Firmware
+- Embedded Systems
+- Binary Analysis
+- Reverse Engineering
+- Critical Infrastructure
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,41 @@ maintainers:
 common:
 - type: Website
   url: https://redballoonsecurity.com/
+- type: DeveloperPortal
+  url: https://ofrak.com/docs/
+- type: Documentation
+  url: https://ofrak.com/docs/
+- type: APIReference
+  url: https://ofrak.com/docs/
+- type: GettingStarted
+  url: https://ofrak.com/docs/getting-started.html
+- type: GitHubOrganization
+  url: https://github.com/redballoonsecurity
+- type: Blog
+  url: https://redballoonsecurity.com/blog
+- type: Support
+  url: https://join.slack.com/t/ofrak/shared_invite/zt-1jku9h6r5-mY7CeeZ4AT8JVmu5YWw2Qg
+- type: SignUp
+  url: https://ofrak.com/sign-up/
+- type: TermsOfService
+  url: https://ofrak.com/terms/
+- type: PrivacyPolicy
+  url: https://ofrak.com/privacy/
+- type: Packages
+  url: packages/red-balloon-security-packages.yml
+- type: SDKs
+  name: Python SDK
+  url: packages/red-balloon-security-packages.yml
+- type: CLI
+  url: cli/red-balloon-security-cli.yml
+- type: ChangeLog
+  url: changelog/red-balloon-security-changelog.yml
+- type: LLMsTxt
+  url: llms/red-balloon-security-llms.txt
+- type: DomainSecurity
+  url: security/red-balloon-security-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

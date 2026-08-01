@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://ofrak.com/docs/getting-started.html + https://github.com/redballoonsecurity/ofrak
+name: ofrak
+summary: >-
+  OFRAK ships a first-party command-line interface installed with the `ofrak`
+  Python package. It unpacks/identifies binaries, launches the interactive web
+  GUI, and manages the OFRAK license. The binary itself is catalogued in
+  packages/.
+install:
+  - method: pypi
+    command: pip install ofrak
+  - method: docker
+    command: docker run --rm -it redballoonsecurity/ofrak
+  - method: source
+    command: git clone https://github.com/redballoonsecurity/ofrak && make install
+commands:
+  - name: license
+    usage: ofrak license --community --i-agree
+    description: Accept and configure the OFRAK license (community or commercial).
+  - name: unpack
+    usage: ofrak unpack [--recursive] [--gui] [--exclude-components-missing-dependencies] <file>
+    description: Unpack a binary/firmware file; with --gui launches the web interface at http://localhost:8080.
+  - name: identify
+    usage: ofrak identify <file>
+    description: Identify the format(s) of a binary using OFRAK identifiers.
+  - name: list
+    usage: ofrak list
+    description: List available OFRAK components.
+  - name: deps
+    usage: ofrak deps
+    description: Report OFRAK component external dependencies.
+  - name: gui
+    usage: ofrak gui
+    description: Launch the OFRAK web GUI server (default http://localhost:8080).
+flows:
+  - name: Unpack and inspect in the GUI
+    steps:
+      - ofrak license --community --i-agree
+      - ofrak unpack --recursive --gui firmware.bin
