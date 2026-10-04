@@ -55,7 +55,7 @@ tags:
 - Binary Analysis
 - Reverse Engineering
 - Critical Infrastructure
-- Open-Source
+- Open Source
 tags_raw:
 - Company
 - Security
@@ -65,6 +65,7 @@ tags_raw:
 - Reverse Engineering
 - Critical Infrastructure
 - Open Source
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
